@@ -9,6 +9,9 @@ let app = new Vue({
         alt: ''
       },
       loading: true,
+      addedName: '',
+      addedComment: '',
+      comments: {},
     },
     created() {
       this.xkcd();
@@ -28,6 +31,7 @@ let app = new Vue({
           this.loading = false;
           this.number = response.data.num;
         } catch (error) {
+          this.number = this.max;
           console.log(error);
         }
       },
@@ -41,6 +45,12 @@ let app = new Vue({
         if (this.number > this.max)
           this.number = this.max
       },
+      firstComic() {
+        this.number = 1;
+      },
+      lastComic() {
+        this.number = this.max;
+      },
       getRandom(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
@@ -48,6 +58,19 @@ let app = new Vue({
       },
       randomComic() {
         this.number = this.getRandom(1, this.max);
+      },
+      addComment() {
+        if (!(this.number in this.comments))
+          Vue.set(app.comments, this.number, new Array);
+          var today = new Date();
+          var date = (today.getMonth()+1)+'/'+ today.getDate() +'/'+today.getFullYear() + " @" + today.getHours() + ':' + today.getMinutes();
+        this.comments[this.number].push({
+          author: this.addedName,
+          text: this.addedComment,
+          time: date
+        });
+        this.addedName = '';
+        this.addedComment = '';
       },
     },
     computed: {

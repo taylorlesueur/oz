@@ -4,30 +4,69 @@
 <head>
   <link rel="stylesheet" href="/styles.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-  <title>XKCD Browser</title>
+  <title>EntreprenOz</title>
 </head>
 
 <body>
-  <h1>XKCD Browser</h1>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Wizard of Entrepreneurship</h1>
+      <p>"Brains are the only things worth having in this world, no matter whether one is a crow or a man." <i>- L. Frank Baum</i></p>
+    </div>
+  </div>
   <div id='app'>
+    <div id="spacer"></div>
+    <div class="intro">
+      <p>Associative thinking occurs when all avenues are open in your brain and your mind, and you allow your mind to “free associate,” or automatically link up ideas, thoughts, observations, sensory input, memory of existing knowledge, and your subconscious. <br><i> - Psychologytoday.com</i></p>
+    </div>
+    <h3 id="instructions">Get creative by connecting these quotes...</h3>
     <div v-if="loading">
       <p>Loading...</p>
     </div>
     <div v-else>
-      <p>
-        <button v-on:click="previousComic">Previous</button>
-        <button v-on:click="nextComic">Next</button>
-        <button v-on:click="randomComic">Random</button>
+      <p class="buttons">
+        <button v-on:click="newOz">New Oz quote</button>
+        <button v-on:click="newBusiness">New business quote</button>
+        <button v-on:click="newBoth">New quotes</button>
       </p>
-      <h2>{{current.safe_title}}</h2>
-      <img v-bind:src="current.img" v-bind:alt="current.alt">
-      <p>{{current.alt}}</p>
-      <p><i>#{{current.num}}, drawn on {{current.day}} {{month}} {{current.year}}</i></p>
+      <div class = "quotes">
+        <div class="oz-card">
+          <h3>Wizard of Oz</h3>
+          <p>{{currentOz.q}}</p>
+          <p><i> - {{currentOz.a}}</i></p>
+        </div>
+        <div class="zen-card">
+          <h3>Entreprenuership</h3>
+          <p>{{currentZen.q}}</p>
+          <p><i> - {{currentZen.a}}</i></p>
+        </div>
+      </div>
+
+      <h3>Journal your thoughts...</h3>
+      <form v-on:submit.prevent="addComment">
+        <input v-model="addedName" placeholder="Name"></p>
+        <textarea v-model="addedComment"></textarea>
+        <br />
+        <button type="submit">Save</button>
+      </form>
+      <h3>Journal Entries</h3>
+      <div v-for="comment in comments[number]">
+        <hr>
+        <p>{{comment.text}}</p>
+        <p><i>-- {{comment.author}}</i>   ({{comment.time}})</p>
+      </div>
     </div>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/vue-star-rating/dist/VueStarRating.umd.min.js"></script>
   <script src="/script.js"></script>
 </body>
+
+<div class="footer-div">
+  <a href="https://github.com/BYUCS260/xkcd-browser-taylorlesueur">
+    <img class="footer-logo" src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+  </a>
+</div>
 
 </html>

@@ -140,23 +140,23 @@ let app = new Vue({
             "a":"Vince Lombardi",
           },
           {
-            "q":"Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking. Don’t let the noise of other’s opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary.",
+            "q":"Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma - which is living with the results of other people's thinking. Don't let the noise of other's opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary.",
             "a":"Steve Jobs",
           },
           {
-            "q":"My biggest motivation? Just to keep challenging myself. I see life almost like one long University education that I never had -- everyday I’m learning something new.",
+            "q":"My biggest motivation? Just to keep challenging myself. I see life almost like one long University education that I never had -- everyday I'm learning something new.",
             "a":"Richard Branson",
           },
           {
-            "q":"Every time you state what you want or believe, you’re the first to hear it. It’s a message to both you and others about what you think is possible. Don’t put a ceiling on yourself.",
+            "q":"Every time you state what you want or believe, you're the first to hear it. It's a message to both you and others about what you think is possible. Don't put a ceiling on yourself.",
             "a":"Oprah Winfrey",
           },
           {
-            "q":"It’s fine to celebrate success but it is more important to heed the lessons of failure.",
+            "q":"It's fine to celebrate success but it is more important to heed the lessons of failure.",
             "a":"Bill Gates",
           },
           {
-            "q":"It takes 20 years to build a reputation and five minutes to ruin it. If you think about that, you’ll do things differently.",
+            "q":"It takes 20 years to build a reputation and five minutes to ruin it. If you think about that, you'll do things differently.",
             "a":"Warren Buffett",
           },
           {
@@ -164,7 +164,7 @@ let app = new Vue({
             "a":"Jeff Bezos",
           },
           {
-            "q":"I have not failed. I’ve just found 10,000 ways that won’t work.",
+            "q":"I have not failed. I've just found 10,000 ways that won't work.",
             "a":"Thomas Edison",
           },
           {
@@ -180,7 +180,7 @@ let app = new Vue({
             "a":"Thomas Edison",
           },
           {
-            "q":"Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.",
+            "q":"Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.",
             "a":"Mark Twain",
           },
           {
@@ -192,7 +192,7 @@ let app = new Vue({
             "a":"Napoleon Hill",
           },
           {
-            "q":"I don’t know the key to success, but the key to failure is trying to please everybody.",
+            "q":"I don't know the key to success, but the key to failure is trying to please everybody.",
             "a":"Bill Cosby",
           },
           {
@@ -201,7 +201,7 @@ let app = new Vue({
           },
           {
             "q":"Entrepreneurship is living a few years of your life like most people won't so you can spend the rest of your life like most people cant.",
-            "a":"Warren G. Tracy’s student",
+            "a":"Warren G. Tracy's student",
           },
           {
             "q":"To win without risk is to triumph without glory.",
@@ -232,7 +232,7 @@ let app = new Vue({
             "a":"Jim Rohn",
           },
           {
-            "q":"The most valuable thing you can make is a mistake- you can’t learn anything from being perfect.",
+            "q":"The most valuable thing you can make is a mistake- you can't learn anything from being perfect.",
             "a":"Adam Osborne",
           }
       ]
